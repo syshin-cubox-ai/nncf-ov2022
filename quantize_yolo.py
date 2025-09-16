@@ -63,9 +63,9 @@ def transform_fn(data_item) -> np.ndarray:
 
 def main():
     # Args
-    pt_path = Path("runs/detect/bezel_detector/weights/last.pt").resolve(strict=True)
+    pt_path = Path("runs/detect/train4/weights/last.pt").resolve(strict=True)
     data_yaml_path = Path(
-        "../../data/home-collected-bezel-background-v5/data.yaml"
+        "../../data/home-collected-bezel-paper-background-v8/data.yaml"
     ).resolve(strict=True)
     subset_size = 300
     fast_bias_correction = False
